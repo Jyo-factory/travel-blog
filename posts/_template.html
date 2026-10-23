@@ -1,0 +1,94 @@
+<!doctype html>
+<!--
+  새 글 쓰는 법
+  1. 이 파일을 posts/ 안에 새 이름으로 복사 (예: posts/mutianyu-tickets.html). 파일명은 영문 소문자와 하이픈 권장.
+  2. [대괄호]로 된 부분과 HTML 주석을 내용에 맞게 고치고, 필요 없는 블록은 지웁니다.
+  3. assets/posts.js 의 POSTS 맨 위에 항목을 추가합니다.
+       { file:"posts/새파일.html", title:"...", date:"YYYY-MM-DD", tags:["..."], summary:"..." }
+  글 형식: 정보 공유형 (개인 후기 아님) / 도입 → 본문 → 마무리
+-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[글 제목] · {site}</title>
+<meta name="description" content="[검색 결과에 보일 한두 문장 요약]">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../">
+<header class="site-header" id="site-header"></header>
+<main class="wrap">
+  <article>
+    <div class="meta"><span class="tag">[태그1]</span><span class="tag">[태그2]</span>[YYYY-MM-DD]</div>
+    <h1>[글 제목]</h1>
+
+    <!-- ===== 도입: 독자가 겪는 문제 → 이 글에서 다룰 내용 ===== -->
+    <h2>도입</h2>
+    <p>[주제가 왜 중요한지, 독자가 놓치기 쉬운 지점을 2~3문장으로 씁니다. 핵심 정보는 <b>굵게</b>.]</p>
+    <p>이 글에서는 [다룰 내용 1], [다룰 내용 2], [다룰 내용 3]을 한 번에 정리합니다.</p>
+
+    <!-- 정보 기준 안내: 출처와 확인 범위를 밝히는 박스. 정보 글에는 유지하세요. -->
+    <div class="callout">
+      <b>정보 기준 안내</b><br>
+      [어떤 자료(공식 사이트, 기사, 여행 사이트 등)를 대조해 정리했는지, 확인 시점은 언제인지]. 요금과 운영 시간, 규정은 바뀔 수 있으니 이용 전에 공식 채널에서 다시 확인하세요.
+    </div>
+
+    <!-- ===== 본문: 소제목을 번호로 나눠 정보를 정리 ===== -->
+    <h2>본문</h2>
+
+    <h3>1. 한눈에 보는 기본 정보</h3>
+    <table>
+      <tr><th>항목</th><th>내용</th></tr>
+      <tr><td>[항목]</td><td>[내용]</td></tr>
+      <tr><td>[항목]</td><td>[내용]</td></tr>
+      <tr><td>[항목]</td><td>[내용]</td></tr>
+    </table>
+
+    <h3>2. [핵심 방법·절차 (예: 계산법, 예약 순서)]</h3>
+    <p>[설명]</p>
+    <table>
+      <tr><th>[열1]</th><th>[열2]</th><th>[열3]</th></tr>
+      <tr><td>[예시]</td><td>[예시]</td><td>[예시]</td></tr>
+    </table>
+    <div class="callout">
+      <b>[주의할 점 제목]</b><br>
+      [헷갈리기 쉬운 내용 (예: 시차, 단위, 예외)]
+    </div>
+
+    <h3>3. 준비할 것</h3>
+    <ul>
+      <li><b>[준비물]:</b> [설명]</li>
+      <li><b>[준비물]:</b> [설명]</li>
+    </ul>
+
+    <h3>4. 알아둘 점</h3>
+    <ul>
+      <li>[팁이나 제한 사항]</li>
+      <li>[팁이나 제한 사항]</li>
+    </ul>
+
+    <h3>5. [대상별 규정 (예: 외국인·아이 관련)]</h3>
+    <ul>
+      <li><b>[구분]:</b> [규정]</li>
+    </ul>
+
+    <h3>6. 정보의 확인 수준</h3>
+    <!-- 확인 수준 예시: 공식 사이트에서 확인 / 여러 자료에서 일치 / 확인하지 못함 -->
+    <table>
+      <tr><th>정보</th><th>확인 수준</th></tr>
+      <tr><td>[공식 사이트에서 확인한 정보]</td><td>[공식 사이트에서 확인]</td></tr>
+      <tr><td>[자료로만 확인한 정보]</td><td>[여러 자료에서 일치, 공식 확인 못 함]</td></tr>
+      <tr><td>[확인하지 못한 정보]</td><td>확인하지 못함. [어디서 확인하면 되는지]</td></tr>
+    </table>
+
+    <!-- ===== 마무리: 핵심 요약 → 행동 안내 → 재확인 당부 ===== -->
+    <h2>마무리</h2>
+    <p>정리하면 [핵심 결론 1~2문장, <b>가장 중요한 정보는 굵게</b>]. [독자가 바로 할 행동 (예: 달력에 적어 두기, 미리 가입하기)].</p>
+    <p>[변경될 수 있는 정보는 이용 시점에 공식 채널에서 마지막으로 확인하라는 당부.]</p>
+  </article>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="../assets/posts.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
