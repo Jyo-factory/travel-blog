@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jyo-factory.github.io/travel-blog/sitemap.xml
